@@ -37,18 +37,18 @@ ORDER BY price desc
 ;
 
 #Show a statistic about the item prices.
-SELECT MIN (price)
+SELECT MIN(price)
 FROM superstore 
 ;
 
 #Show a statistic about the price for items in the category of "Kitchen Supplies". 
-SELECT AVG (price), category
+SELECT AVG(price), category
 FROM superstore
-WHERE category="Kitchen Supplies"
+WHERE category='Kitchen Supplies'
 ;
 
 #How many air purifiers are in stock?
-SELECT SUM (stock_quantity), item_name 
+SELECT SUM(stock_quantity), item_name 
 FROM superstore
-WHERE item_name="Air Purifier"
+WHERE item_name='Air Purifier'
 ;
