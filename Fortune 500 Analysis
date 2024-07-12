@@ -63,12 +63,12 @@ VALUES
 
 #Assign all the companies in the Healthcare industry as "mother-friendly workplace", "acceptable", or "abysmal" based on the maternity leave offered. 
 SELECT company_name
-, CASE WHEN maternity_leave_weeks>=10 THEN "mother-friendly workplace"
-  WHEN maternity_leave_weeks>=8 THEN "acceptable"
-  ELSE "abysmal"
+,CASE WHEN maternity_leave_weeks>=10 THEN 'mother-friendly workplace'
+WHEN maternity_leave_weeks>=8 THEN 'acceptable'
+ELSE 'abysmal'
 END AS mother_friendliness
 FROM fortune_companies
-WHERE industry="Healthcare"
+WHERE industry='Healthcare'
 ;
 
 #Which industries have an average revenue of at least $200 Billion, and what are their avg revenues?
@@ -88,11 +88,11 @@ AND healthcare_benefits=1
 #Which company in the Retail industry has the least revenue, and what's their revenue? 
 SELECT company_name, MIN(revenue) AS revenue
 FROM fortune_companies
-WHERE industry="Retail"
+WHERE industry='Retail'
 ;
 
 #What is the average employee tenure in the Telecommunications industry? 
 SELECT industry, ROUND(AVG(avg_employee_tenure),1) AS average_tenure
 FROM fortune_companies
-WHERE industry="Telecommunications"
+WHERE industry='Telecommunications'
 ;
