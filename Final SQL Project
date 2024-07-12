@@ -1,3 +1,8 @@
+# For my final project, I practiced all the SQL concepts I learned throughout my Break Into Tech Data Analyst course. I worked with a big dataset which represented
+a digital media store and included tables for artists, albums, media tracks, invoices, and customers.
+
+# Below are the questions I answered about this dataset:
+
 #1. Show Customers (their full names, customer ID, and country) who are not in the US.
 SELECT FirstName, LastName, CustomerId, Country 
 FROM chinook.customers 
