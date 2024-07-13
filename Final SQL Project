@@ -51,7 +51,8 @@ FROM chinook.employees emp
 JOIN chinook.Customers cust 
 ON cust.SupportRepId=emp.EmployeeId
 JOIN chinook.Invoices Inv 
-ON Inv.CustomerId=cust.CustomerId;
+ON Inv.CustomerId=cust.CustomerId
+;
 
 #8. How many Invoices were there in 2009?
 SELECT COUNT(*)
