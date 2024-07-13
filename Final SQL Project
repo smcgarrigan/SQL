@@ -55,7 +55,7 @@ ON Inv.CustomerId=cust.CustomerId
 ;
 
 #8. How many Invoices were there in 2009?
-SELECT COUNT(*)
+SELECT COUNT(*) AS 2009_total_invoices
 FROM chinook.Invoices
 WHERE InvoiceDate BETWEEN '2009-01-01' AND '2009-12-31'
 ;
